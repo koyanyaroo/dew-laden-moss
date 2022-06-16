@@ -158,13 +158,13 @@ export default function DewLadenMoss({children}) {
                                         key={item.name}
                                         href={item.href}
                                         className={classNames(
-                                            item.current ? 'bg-brand/5 text-brand' : 'text-gray-600 hover:bg-brand/5',
+                                            item.current ? 'bg-brand/5 text-brand' : 'text-gray-700 hover:text-brand hover:bg-brand/5',
                                             'group flex items-center px-2 py-2 text-sm font-medium rounded-sm'
                                         )}
                                     >
                                         <item.icon
                                             className={classNames(
-                                                item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                                                item.current ? 'text-brand' : 'text-gray-700 group-hover:text-brand',
                                                 'stroke-[1.5px] mr-3 flex-shrink-0 h-5 w-5'
                                             )}
                                             aria-hidden="true"
@@ -209,10 +209,10 @@ export default function DewLadenMoss({children}) {
                             <div className="ml-4 flex items-center md:ml-6">
                                 <button
                                     type="button"
-                                    className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    className="bg-white p-1 rounded-full text-gray-400 hover:text-brand focus:outline-none focus:ring-[1.5px] focus:ring-offset-2 focus:ring-brand"
                                 >
                                     <span className="sr-only">View notifications</span>
-                                    <BellIcon className="h-6 w-6 stroke-[1.5px]" aria-hidden="true" />
+                                    <BellIcon className="text-gray-700 h-6 w-6 stroke-[1.5px]" aria-hidden="true" />
                                 </button>
 
                                 {/* Profile dropdown */}
