@@ -9,8 +9,8 @@ import {
 import {SearchIcon} from '@heroicons/react/solid'
 
 const navigation = [
-    { name: 'Orders', href: '#', icon: CurrencyDollarIcon, current: true },
-    { name: 'Products', href: '#', icon: ShoppingBagIcon, current: false },
+    { name: 'Orders', href: '/orders', icon: CurrencyDollarIcon, current: true },
+    { name: 'Products', href: '/products', icon: ShoppingBagIcon, current: false },
     { name: 'Customers', href: '#', icon: UsersIcon, current: false },
     { name: 'Discounts', href: '#', icon: TagIcon, current: false },
     { name: 'Gift Card', href: '#', icon: GiftIcon, current: false },
@@ -158,14 +158,14 @@ export default function DewLadenMoss({children}) {
                                         key={item.name}
                                         href={item.href}
                                         className={classNames(
-                                            item.current ? 'bg-brand/10 text-brand' : 'text-gray-600 hover:bg-brand/10',
-                                            'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                                            item.current ? 'bg-brand/5 text-brand' : 'text-gray-600 hover:bg-brand/5',
+                                            'group flex items-center px-2 py-2 text-sm font-medium rounded-sm'
                                         )}
                                     >
                                         <item.icon
                                             className={classNames(
                                                 item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
-                                                'mr-3 flex-shrink-0 h-5 w-5'
+                                                'stroke-[1.5px] mr-3 flex-shrink-0 h-5 w-5'
                                             )}
                                             aria-hidden="true"
                                         />
@@ -177,7 +177,7 @@ export default function DewLadenMoss({children}) {
                     </div>
                 </div>
                 <div className="md:pl-64 md:-ml-4 flex flex-col flex-1">
-                    <div className="sticky top-0 z-10 flex-shrink-0 flex h-14 bg-white shadow">
+                    <div className="sticky top-0 z-10 flex-shrink-0 flex h-14 bg-white border-b">
                         <button
                             type="button"
                             className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -212,7 +212,7 @@ export default function DewLadenMoss({children}) {
                                     className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 >
                                     <span className="sr-only">View notifications</span>
-                                    <BellIcon className="h-6 w-6" aria-hidden="true" />
+                                    <BellIcon className="h-6 w-6 stroke-[1.5px]" aria-hidden="true" />
                                 </button>
 
                                 {/* Profile dropdown */}
