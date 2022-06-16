@@ -11,6 +11,9 @@
       "@/pages/*": [
         "pages/*"
       ],
+      "@/layout/*": [
+        "layout/*"
+      ],
       "@/utils/*": [
         "utils/*"
       ]

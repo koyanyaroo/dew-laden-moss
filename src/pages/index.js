@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff"/>
       </Head>
       <main className="max-w-screen">
-        <h1 className="text-3xl font-bold underline">Dew Laden Moss</h1>
+        <h1 className="text-3xl font-bold underline px-8 bg-red-300 text-center">Dew Laden Moss</h1>
       </main>
     </>
   )

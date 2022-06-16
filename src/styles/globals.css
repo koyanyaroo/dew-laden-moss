@@ -1,3 +1,7 @@
+:root {
+    --color-brand: 54 83 20;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
