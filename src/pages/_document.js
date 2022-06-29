@@ -7,7 +7,7 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="icon" href="/dmicon.svg" />
                 </Head>
-                <body className="h-full bg-gray-50/50">
+                <body className="h-full bg-gray-50/80">
                 <Main/>
                 <NextScript/>
                 </body>

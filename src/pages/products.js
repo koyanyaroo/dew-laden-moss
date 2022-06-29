@@ -15,8 +15,8 @@ export default function orders() {
                         <div className="flex justify-between">
                             <div>
                                 <div className="flex items-center space-x-4 font-medium">
-                                    <div className="font-semibold">Orders</div>
-                                    <div className="text-gray-400">Drafts</div>
+                                    <div className="font-semibold">Products</div>
+                                    <div className="text-gray-400">Collections</div>
                                 </div>
                                 <div className="pt-10">
                                     <div className="flex items-center space-x-1 text-xs font-medium">
@@ -26,8 +26,7 @@ export default function orders() {
                                         {/*        <PlusIcon className="w-3 h-3"/>*/}
                                         {/*    </div>*/}
                                         {/*</button>*/}
-                                        <button className="px-2 py-0.5 rounded-md bg-gray-50 border text-gray-400">Complete</button>
-                                        <button className="px-2 py-0.5 rounded-md bg-gray-50 border text-gray-400">Incomplete</button>
+                                        <button className="px-2 py-0.5 rounded-md bg-gray-50 border text-gray-400">Unpublished</button>
                                     </div>
                                 </div>
                             </div>

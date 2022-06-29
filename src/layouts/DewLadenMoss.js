@@ -261,7 +261,7 @@ export default function DewLadenMoss({children}) {
 
                     <main className="flex-1">
                         <div className="py-6">
-                            <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-7 pt-3">
+                            <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 pt-2">
                                 {children}
                             </div>
                         </div>
