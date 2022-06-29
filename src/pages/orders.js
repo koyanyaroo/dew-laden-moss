@@ -38,7 +38,7 @@ export default function orders() {
                                     </div>
                                     <input
                                         id="search-field"
-                                        className="block w-32 h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 transition-all rounded-sm ease-in-out delay-150 focus:w-full focus:shadow focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:border-transparent sm:text-sm"
+                                        className="block w-24 h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 transition-all rounded-sm ease-in-out delay-150 focus:w-full placeholder:text-xs focus:shadow focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:border-transparent sm:text-sm"
                                         placeholder="Search"
                                         type="search"
                                         name="search"
