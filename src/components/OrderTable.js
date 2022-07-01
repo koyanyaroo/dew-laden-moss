@@ -53,6 +53,7 @@ export default function OrderTable() {
                                     <td className="whitespace-nowrap px-3 py-4 text-xs text-gray-800">{person.status}</td>
                                     <td className="whitespace-nowrap px-3 py-4 text-xs text-gray-800">Rp. {person.total}</td>
                                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                                        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                                         <a href="/orders/detail" className="text-indigo-600 hover:text-indigo-900">
                                             ...<span className="sr-only">, {person.name}</span>
                                         </a>
