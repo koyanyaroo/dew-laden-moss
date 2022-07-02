@@ -1,4 +1,8 @@
 import Dots from "@/components/svg/Dots";
+import RollBack from "@/components/svg/RollBack";
+import Success from "@/components/svg/Success";
+import Warning from "@/components/svg/Warning";
+import Shipped from "@/components/svg/Shipped";
 
 export default function TimeLineOrderCard() {
     return (
@@ -20,7 +24,7 @@ export default function TimeLineOrderCard() {
                     <div className="bg-brand/50 text-white h-5 w-5 rounded-full flex items-center justify-center">
                         <p className="absolute text-xs text-center">L</p>
                     </div>
-                    <p className="font-bold text-xs">lotnok@gmail.com</p>
+                    <p className="font-bold text-xs text-gray-700">lotnok@gmail.com</p>
                 </div>
                 <Dots/>
             </div>
@@ -37,23 +41,117 @@ export default function TimeLineOrderCard() {
             <div className="flex justify-between pt-6 pb-3">
                 <div className="flex items-center space-x-2">
                     <div className="h-5 w-5 text-gray-600">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.33301 2.91669V7.91669H8.33301" stroke="currentColor"
-                                  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                            <path
-                                d="M3.41396 11.6784C3.57168 13.1642 4.14444 13.9943 5.18922 15.0653C6.23401 16.1363 7.6093 16.8262 9.0944 17.0244C10.5795 17.2226 12.0883 16.9175 13.3787 16.1581C14.6691 15.3988 15.6663 14.2291 16.2103 12.8369C16.7542 11.4446 16.8134 9.91052 16.3783 8.48073C15.9432 7.05094 15.039 5.80836 13.8109 4.95238C12.5828 4.0964 11.1019 3.67666 9.60596 3.76051C8.10998 3.84436 6.68561 4.42693 5.56142 5.41475L3.33301 7.41474"
-                                stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"
-                                strokeLinejoin="round"></path>
-                        </svg>
+                        <RollBack/>
                     </div>
-                    <p className="font-bold text-xs">Return</p>
+                    <p className="font-bold text-xs text-gray-700">Refund</p>
+                </div>
+                <p className="text-xs font-semibold text-gray-800">$30</p>
+            </div>
+            <div className="flex justify-between">
+                <div className="flex ml-2 space-x-3 -mt-3">
+                    <div className="border border-l-0 my-2 py-3"/>
+                    <div className="pl-2 flex">
+                        <p className="text-xs text-gray-600">Sat, 05 Feb 2022 22:16:03 GMT</p>
+                    </div>
+                </div>
+                <p className="text-xs text-gray-600 -mt-3">Return</p>
+            </div>
+            <div className="flex pt-6 pb-3">
+                <div className="flex items-center space-x-2">
+                    <div className="h-5 w-5 text-green-500">
+                        <Success/>
+                    </div>
+                    <p className="font-bold text-xs text-gray-700">Return Received</p>
                 </div>
             </div>
-            <div className="flex ml-2 space-x-3 -mt-3">
-                <div className="border border-l-0 my-2 py-12"></div>
-                <div className="pl-2">
-                    <p className="text-xs text-gray-600">Sat, 05 Feb 2022 22:16:03 GMT</p>
+            <div className="flex justify-between items-center space-x-3 -mt-3">
+                <div className="flex ml-2">
+                    <div className="border border-l-0 my-2 py-8"/>
+                    <div className="pl-5">
+                        <p className="text-xs text-gray-600">Mon, 20 Sep 2021 11:21:43 GMT</p>
+                        <div className="pt-5">
+                            <div className="flex items-center space-x-4">
+                                <img className="h-10 rounded-lg" src="https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"/>
+                                <p className="text-xs">Dew Laden Moss T-Shirt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p className="text-xs mt-8 tracking-wide">x1</p>
+            </div>
+            <div className="flex pt-6 pb-3">
+                <div className="flex items-center space-x-2">
+                    <div className="h-5 w-5 text-yellow-500">
+                        <Warning/>
+                    </div>
+                    <p className="font-bold text-xs text-gray-700">Return Requested</p>
+                </div>
+            </div>
+            <div className="flex justify-between items-center space-x-3 -mt-3">
+                <div className="flex ml-2">
+                    <div className="border border-l-0 my-2 py-8"/>
+                    <div className="pl-5">
+                        <p className="text-xs text-gray-600">Mon, 20 Sep 2021 11:21:43 GMT</p>
+                        <div className="pt-5">
+                            <div className="flex items-center space-x-4">
+                                <img className="h-10 rounded-lg" src="https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"/>
+                                <p className="text-xs">Dew Laden Moss T-Shirt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p className="text-xs mt-8 tracking-wide">x1</p>
+            </div>
+            <div className="flex pt-6 pb-3">
+                <div className="flex items-center space-x-2">
+                    <div className="h-5 w-5 text-gray-700">
+                        <Shipped/>
+                    </div>
+                    <p className="font-bold text-xs text-gray-700">Items Shipped</p>
+                </div>
+            </div>
+            <div className="flex justify-between items-center space-x-3 -mt-3">
+                <div className="flex ml-2">
+                    <div className="border border-l-0 my-2 py-8"/>
+                    <div className="pl-5">
+                        <p className="text-xs text-gray-600">Mon, 20 Sep 2021 11:21:43 GMT</p>
+                        <div className="pt-5 space-y-4">
+                            <div className="flex items-center space-x-4 ">
+                                <img className="h-10 rounded-lg" src="https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"/>
+                                <p className="text-xs">Dew Laden Moss T-Shirt</p>
+                            </div>
+                            <div className="flex items-center space-x-4">
+                                <img className="h-10 rounded-lg" src="https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"/>
+                                <p className="text-xs">Dew Laden Moss T-Shirt</p>
+                            </div>
+                            <div className="flex items-center space-x-4">
+                                <img className="h-10 rounded-lg" src="https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"/>
+                                <p className="text-xs">Dew Laden Moss T-Shirt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col space-y-10 mt-10">
+                    <p className="text-xs tracking-wide">x1</p>
+                    <p className="text-xs tracking-wide">x1</p>
+                    <p className="text-xs tracking-wide">x1</p>
+                </div>
+            </div>
+            <div className="flex justify-between pt-6 pb-3">
+                <div className="flex items-center space-x-2">
+                    <div className="h-5 w-5 text-green-500">
+                        <Success/>
+                    </div>
+                    <p className="font-bold text-xs text-gray-700">Order Placed</p>
+                </div>
+                <p className="text-xs font-semibold text-gray-800">$160</p>
+            </div>
+            <div className="flex">
+                <div className="flex ml-2 space-x-3 -mt-3">
+                    <div className="border border-l-0 my-2 py-3"/>
+                    <div className="pl-2 flex">
+                        <p className="text-xs text-gray-600">Sat, 05 Feb 2022 22:16:03 GMT</p>
+                    </div>
                 </div>
             </div>
         </>
