@@ -1,3 +1,5 @@
+import Dots from "@/components/svg/Dots";
+
 const products = [
     {
         id: 1,
@@ -73,8 +75,8 @@ export default function ProductTable() {
                                     </td>
                                     <td className="whitespace-nowrap px-3 text-xs text-gray-800">{product.inventory}</td>
                                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                            ...<span className="sr-only">, {product.name}</span>
+                                        <a href="@/components/tables/ProductTable#" className="text-indigo-600 hover:text-indigo-900">
+                                            <Dots/><span className="sr-only">, {product.name}</span>
                                         </a>
                                     </td>
                                 </tr>

@@ -1,7 +1,7 @@
 import DewLadenMoss from "../layouts/DewLadenMoss"
 import {PlusIcon, SearchIcon} from "@heroicons/react/solid";
 import Head from 'next/head'
-import ProductTable from "@/components/ProductTable"
+import ProductTable from "@/components/tables/ProductTable"
 import Search from "@/components/Search";
 
 export default function orders() {

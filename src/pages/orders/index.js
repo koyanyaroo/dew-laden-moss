@@ -1,6 +1,6 @@
 import DewLadenMoss from "../../layouts/DewLadenMoss";
 import {PlusIcon, SearchIcon} from "@heroicons/react/solid";
-import OrderTable from "@/components/OrderTable";
+import OrderTable from "@/components/tables/OrderTable";
 import Head from 'next/head'
 import Search from "@/components/Search";
 
